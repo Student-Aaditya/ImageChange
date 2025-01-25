@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image</title>
+    <style>
+        @media screen and (min-width:900px) {
+            
+       
+        .image{
+            width: 60rem;
+            height: 40rem;
+            /* border: 2px solid red; */
+            /* margin: 0 0 0 4rem; */
+        }
+        .images{
+            width: 40rem;
+            height: 25rem;
+            margin: 2rem 0 0 6rem;
+            /* border: 2px solid blue; */
+        }
+        .images img{
+            width: 35rem;
+            height: 25rem;
+        }
+        .image-button{
+            margin: 2rem 0 0 7rem;
+            width: 35rem;
+            height: 8rem;
+            /* border: 2px solid green; */
+        }
+        .one button{
+            margin: 0 0 0 3rem;
+            font-size: 2rem;
+        }
+        .two button{
+            margin: 2rem 0 0 3rem;
+            font-size: 2rem;
+        }
+
+        
+        button{
+            background-color: whitesmoke;
+            color: black;
+            border-radius: 2rem;
+            box-shadow: 1px 2px 3px green;
+        }
+        button:hover{
+            background-color: rgb(213, 145, 203);
+            color: black;
+        }
+    }
+    @media screen  and (max-width:600px){
+        .images img{ 
+            width: 20rem;
+            height: 20rem;
+            margin: 2rem 0 0 6rem;
+            /* border: 2px solid blue; */
+        }
+        .image-button{
+            margin: 2rem 0 0 1rem;
+            width: 25rem;
+            height: 8rem;
+            /* border: 2px solid green; */
+        }
+        .one button{
+            margin: 0 0 0 3rem;
+            font-size: 1.3rem;
+        }
+        .two button{
+            margin: 2rem 0 0 3rem;
+            font-size: 1.3rem;
+        }
+        button{
+            background-color: whitesmoke;
+            color: black;
+            border-radius: 2rem;
+            box-shadow: 1px 2px 3px rgb(223, 226, 65);
+        }
+        button:hover{
+            background-color: rgb(141, 126, 217);
+            color: black;
+        }
+    }
+
+         </style>
+</head>
+<body>
+    <h1>Image Change</h1>
+    <div class="image">
+        <div class="images">
+            <img src="i.jpg" alt="">
+        </div>
+        <div class="image-button">
+            <div class="one">
+                <button class="btn1">FLAG</button>
+                <button class="btn2">ASHOK STAMP</button>
+            </div>
+            <div class="two">
+                <button class="btn3">CRICKET TEAM</button>
+                <button class="btn4">HORSE</button>
+            </div>
+        </div>
+    </div>
+    <script>
+
+
+
+
+        let image=document.querySelector(" .images ");
+        let btn1=document.querySelector(".btn1");
+        btn1.addEventListener("click",()=>{
+            image.innerHTML='<img src="i.jpg"/>';
+        })
+
+
+
+        let btn2=document.querySelector(".btn2");
+        btn2.addEventListener("click",()=>{
+            image.innerHTML='<img src="as.webp"/>';
+        })
+
+
+
+        let btn3=document.querySelector(".btn3");
+        btn3.addEventListener("click",()=>{
+            image.innerHTML='<img src="I.webp"/>';
+        })
+        let btn4=document.querySelector(".btn4");
+        btn4.addEventListener("click",()=>{
+            image.innerHTML='<img src="h.jpg"/>';
+        })
+    </script>
+</body>
+</html>
